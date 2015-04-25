@@ -2,22 +2,20 @@ use strict;
 use warnings;
 $|=1;
 
-sub main{
+sub main {
 
-    my @files = (
-    '/Users/Benz/files/hover-effects/hover.jpg', 
-    '/Users/Benz/files/hover-effects/index.html',
-    '/Usrs/Benz/files/hover-effects/index.html',
-);
+    my $file ='/Users/Benz/Desktop/beowulf.html';
 
- foreach my $file (@files) {
-   if ( -f $file) {
-    print "Got It I found $file\n";
+open(INPUT, $file) or die "No Way\n"; 
+
+while(my $line = <INPUT>) {
+if($line =~ /Spear-Danes/) {
+print $line;
 }
-  else {
-    print "Nope\, $file isn\'t real\n";
-     }
-   }
+}
+
+close (INPUT);
+
 }
 
 main();
