@@ -4,18 +4,20 @@ $|=1;
 
 sub main {
 
-    my $file ='/Users/Benz/Desktop/beowulf.html';
-
-open(INPUT, $file) or die "No Way\n"; 
-
-while(my $line = <INPUT>) {
-if($line =~ /Spear-Danes/) {
-print $line;
-}
-}
-
-close (INPUT);
-
+    my $file = '/Users/Benz/Desktop/beowulf.html';
+    open (INPUT, $file) or die "Ha Ha can't fint $file\n";
+    
+    my $output = '>output.txt';
+    open (OUTPUT, $output) or die "just can\'t find $output\n";
+    
+    while(my $line =<INPUT>) {
+            if ($line =~ /Spear-Danes/) {
+                print OUTPUT $line;
+            }
+        }
+        close (INPUT);
+    close (OUTPUT);
+    close (OUTPUT);
 }
 
 main();
