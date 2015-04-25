@@ -11,8 +11,13 @@ sub main {
     open (OUTPUT, $output) or die "just can\'t find $output\n";
     
     while(my $line =<INPUT>) {
+
+
             if ($line =~ /Spear-Danes/) {
+
+            $line =~ s/Days/DAYS/ig;
                 print OUTPUT $line;
+                
             }
         }
         close (INPUT);
