@@ -8,14 +8,11 @@ sub main {
     open (INPUT, $file) or die "Ha Ha can't fint $file\n";
     
     while(my $line = <INPUT>) {
-            if ($line =~ /Spear.Danes/) {
-
+            if ($line =~ /(Sp....Danes)/) {
                 print $line;
-                
             }
         }
         close (INPUT);
 }
 
 main();
-
