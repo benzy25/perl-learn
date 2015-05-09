@@ -8,7 +8,7 @@ sub main {
     open (INPUT, $file) or die "Ha Ha can't fint $file\n";
     
     while(my $line = <INPUT>) {
-            if ($line =~ /(Da.*s)/) {
+            if ($line =~ /(Da.*?s)/) {
                 print "$1\n";
             }
         }
