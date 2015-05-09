@@ -8,8 +8,8 @@ sub main {
     open (INPUT, $file) or die "Ha Ha can't fint $file\n";
     
     while(my $line = <INPUT>) {
-            if ($line =~ /(Sp....Danes)/) {
-                print $line;
+            if ($line =~ /(Da.*s)/) {
+                print "$1\n";
             }
         }
         close (INPUT);
