@@ -1,7 +1,9 @@
-print 'Welcome to the Pig Latin Translator!'
-
-original = raw_input("What's your name?")
-empty_string = ""
-if len(original) > 0 and original.isalpha():
-        print original
-else: print "empty"
+pyg = 'ay'
+original = raw_input('Enter a word:')
+word = original.lower()
+first = word[0]
+new_word = new_word[1:len(new_word)]
+if len(new_word) > 0 and new_word.isalpha():
+    print new_word
+else:
+    print 'empty'
