@@ -11,8 +11,8 @@ sub main {
 
    my $text = 'DE19742';
 
-if($text =~ (DE/d{5})/) {
-
+    if($text =~ /(DE\$\d{3,8})/) {
+        
 print "Found: '$1'/n";
 
 }
