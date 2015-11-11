@@ -4,15 +4,21 @@ $|=1;
 
 sub main {
 
-    my $file = '/Users/Benz/Desktop/beowulf.html';
-    open (INPUT, $file) or die "Ha Ha can't fint $file\n";
+    my $file = '/Users/jeffreyambrose/Desktop/email-contest/allhospital.txt';
+    open (INPUT, $file) or die "Ha Ha can't find $file\n";
     
     while(my $line =<INPUT>) {
 
-            if ($line =~ /Spear-Danes/) {
+            if ($line =~ /Hospital/) {
 
                 print $line;
                 
+            } elsif ($line =~ /Health/){
+                
+                print $line;
+            }    elsif ($line =~ /Medical/){
+                
+                print $line;
             }
         }
         close (INPUT);
