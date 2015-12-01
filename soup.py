@@ -19,7 +19,7 @@ stdout = streamWriter(stdout)
 # a place to store the links we find
 links = []
 
-r = requests.get('http://www.ushospital.info/Military.htm')
+r = requests.get('https://www.longtermcarelink.net/ref_state_veterans_va_nursing_homes.htm')
 page = r.text
 soup = BeautifulSoup(page,)
 for link in soup.findAll('a', href=True):
