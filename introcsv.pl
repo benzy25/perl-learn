@@ -5,7 +5,7 @@ $|=1;
 
 sub main {
 
-    my $input = "input-parts-1.csv";
+    my $input = "values.csv";
 
    unless(open(INPUT, $input)) {
    die "\nCannot open $input\n";
