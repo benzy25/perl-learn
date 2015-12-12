@@ -10,29 +10,29 @@ REPOS=(
 ~/files/diamedical/medmattress
 )
 
-echo What ya wanna do?
+MOVE="${green}Moving to next REPO... \n${reset_color}" 
+
+echo what ya wanna do?
 
 read input
 
 if [ $input =  "commit" ]
 then
-    for i in “${REPOS[@]}”
+    for i in "${REPOS[@]}"
     do
         cd $i
         git add . -A
         git commit -m "autocommit backup point"
-        echo  "Moving to Next REPO...
-         "
+        tput setaf 2;echo  $MOVE;tput sgr0 
         sleep 1
     done 
 
 else 
-for i in “${REPOS[@]}”
+for i in "${REPOS[@]}"
 do
     cd $i
     git $input 
-    echo "Moving to Next REPO...
-     "
+    tput setaf 2;echo  $MOVE;tput sgr0 
     sleep 1
     done 
 fi
