@@ -4,7 +4,7 @@ REPOS=(
 ~/files/sql 
 ~/files/plugs 
 ~/files/robbenz 
-~/files/perl_scripts 
+~/files/scripts
 ~/files/diamedical/diamedical
 ~/files/diamedical/medmattress
 ~/files/diamedical/wordpress/backup/
