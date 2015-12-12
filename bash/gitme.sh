@@ -20,8 +20,7 @@ then
     do
         cd $i
         git add . -A
-        read -p "Commit description: " desc
-        git commit -m "$desc"
+        git commit -m "autocommit backup point"
         echo  "Moving to Next REPO...
          "
         sleep 1
