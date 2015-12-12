@@ -10,7 +10,7 @@ REPOS=(
 ~/files/diamedical/medmattress
 )
 
-MOVE="${green}Moving to next REPO... \n${reset_color}" 
+MOVE="Moving to next REPO... \n" 
 
 echo what ya wanna do?
 
