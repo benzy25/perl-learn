@@ -6,8 +6,9 @@ REPOS=(
 ~/files/robbenz 
 ~/files/scripts
 ~/files/diamedical/diamedical
+~/files/bash_profile
 ~/files/diamedical/medmattress
-~/files/diamedical/wordpress/backup/
+~/files/diamedical/wordpress_backup/
 )
 
 for i in “${REPOS[@]}”
