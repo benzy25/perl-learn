@@ -7,7 +7,5 @@ git commit -m "$desc"
 read -p "push?" ans
 if [ ans = "yes" ]
 then
-do
     git push
-done
 fi
