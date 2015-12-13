@@ -4,7 +4,8 @@ git add . -A
 read -p "Commit description: " desc  
 git commit -m "$desc"
 
-read "wanna push? \n" ans
+tput setaf 2;echo  Wanna Push?;tput sgr0 
+read ans
 if [ $ans = "yes" ]
 then
     git push
