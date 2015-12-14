@@ -10,3 +10,9 @@ if [ $ans = "yes" ]
 then
     git push
 fi
+tput setaf 3;echo Wanna ftp?;tput sgr0
+read ftp 
+if [ $ftp = "yes" ]
+then
+    git ftp push
+fi
