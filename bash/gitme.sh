@@ -21,6 +21,7 @@ then
     for i in "${REPOS[@]}"
     do
         cd $i
+        tput setaf 6;pwd;tput sgr0 
         git add . -A
         git commit -m "autocommit backup point"
         tput setaf 2;echo  $MOVE;tput sgr0 
@@ -31,6 +32,7 @@ else
 for i in "${REPOS[@]}"
 do
     cd $i
+    tput setaf 6;pwd;tput sgr0 
     git $input 
     tput setaf 2;echo  $MOVE;tput sgr0 
     sleep 1
