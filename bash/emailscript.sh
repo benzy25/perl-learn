@@ -8,30 +8,22 @@ cd ~/Desktop/email-tmp/
 sleep 1
 unzip ~/Desktop/OneDrive-*.zip
 sleep 1
-
 for f in ./*.xlsx
 do
     mv "$f" "${f// /_}"
     sleep 1
 done
-ls
-
 for k in ./*.xlsx
 do
     ssconvert -v "$k" "${k}.csv"
 done
 sleep 1
-
 rm ./*.xlsx
-
 for g in ./*.csv
 do
     mv "$g" "${g//.xlsx/}"
 done
-ls
-
 sleep 1
-
 for s in ./*.csv
 do
    # awk -F "\"*,\"*" '{print $7}' "$s" >> "${s}"
@@ -42,20 +34,19 @@ sleep 1
 done
 
 mkdir ~/Desktop/new-csv
-
+sleep 1
 mv ./*.csv.csv ~/Desktop/new-csv
-
+sleep 1 
 cd ~/Desktop/new-csv
-
+sleep 1
 rm -rf ~/Desktop/email-tmp
-
+sleep 1
 for t in ./*.csv
 do
     mv "$t" "${t//.csv.csv/.csv}"
 done
-ls
-echo type done when you are finished importing 
 
+echo type done when you are finished importing 
 read input
 if [ $input = "done" ]
 then
