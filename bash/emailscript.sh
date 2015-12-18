@@ -45,8 +45,7 @@ for t in ./*.csv
 do
     mv "$t" "${t//.csv.csv/.csv}"
 done
-
-echo type done when you are finished importing 
+tput setaf 2;echo "type done when you are finished importing";tput sgr0
 read input
 if [ $input = "done" ]
 then
