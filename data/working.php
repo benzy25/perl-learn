@@ -1,4 +1,3 @@
-
 <div class="header-wrap-text-medical-equipment">
 <h2 class="header-wrap-text-medical-equipment-header">Surgical</h2>
 </div>
