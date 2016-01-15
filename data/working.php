@@ -14,6 +14,14 @@ $custom_stuff = array( '_predictive_search_focuskw',
 
 ?>
 
+
+<h4 class="pageheaders">CUSTOM SIZING FORM</h4><div class="blue-border-h4"></div>
+<div class="descriptwraps"><span class="pagedescripts">Fill out our custom sizing form below and we’ll customize a
+mattress and/or cover to your specific dimensions!
+</span></div>
+
+
+
 <h2>Specifications</h2>
 <div class="ems-approved-img">
 <img class="ems-img-size" src="/wp-content/themes/x-child-integrity-light/imgs/ems-approved.png" alt="" /></div>
@@ -62,4 +70,5 @@ Your third accordion text[/accordion_item]
 [/accordion]
 */
 
+    
 ?>
