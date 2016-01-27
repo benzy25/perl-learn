@@ -7,7 +7,6 @@ REPOS=(
 ~/files/scripts
 ~/files/bash_profile
 ~/files/diamedical/diamedical
-~/files/diamedical/medmattress
 )
 
 MOVE="Moving to next REPO... \n" 
