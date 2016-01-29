@@ -24,7 +24,7 @@ then
    echo "Okay" 
 else die "Fuck You"
 fi
-tput setaf 3;echo Wanna Push to Product Server?;tput sgr0
+tput setaf 3;echo Wanna Push to Production Server?;tput sgr0
 read -r production 
 if [ "$production" = "yes" ]
 then
