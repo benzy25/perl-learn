@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# this only works with WORDS ONLY
+
 read -r -p "Search For: " FIND 
 read -r -p "Replace With: " REPLACE 
 read -r -p "Full Path To File: " FILE 
