@@ -19,7 +19,7 @@ read -r ftp
 if [ "$ftp" = "yes" ]
 then
     git ftp push
-elif [ "$ans" = "no" ]
+elif [ "$ftp" = "no" ]
 then
    echo "Okay" 
 else die "Fuck You"
