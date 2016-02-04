@@ -24,7 +24,7 @@ more() {
     if [ "$more" = "yes" ]
     then
         pushing
-    elif [ "$ans" = "no" ]
+    elif [ "$more" = "no" ]
     then
         echo "Okay" 
     else die "$KILL"
