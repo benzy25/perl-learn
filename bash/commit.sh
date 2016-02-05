@@ -47,7 +47,7 @@ gitftp() {
 
 gr="$(git root)"
 
-cd "$gr" 
+cd "$gr" || exit
 
 tput setaf 5;pwd;tput sgr0 
 
