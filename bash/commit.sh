@@ -5,9 +5,9 @@ die() { echo "$@" 1>&2 ; exit 1; }
 KILL="Fuck You"
 
 pushing() {
-    tput setaf 3;echo  What Branch?;tput sgr0 
+    tput setaf 2;echo  What Branch?;tput sgr0 
     read -r branch
-    tput setaf 3;echo  Where to? You can say 'origin', 'staging', or 'production';tput sgr0 
+    tput setaf 2;echo  Where to? You can say 'origin', 'staging', or 'production';tput sgr0 
     read -r ans
     if [ "$ans" = "origin" ] || [ "$ans" = "staging" ] || [ "$ans" = "production" ]
     then
@@ -49,7 +49,7 @@ gr="$(git root)"
 
 cd "$gr" || exit
 
-tput setaf 5;pwd;tput sgr0 
+tput setaf 6;pwd;tput sgr0 
 
 git add . -A
 read -r -p "Commit description: " desc  
