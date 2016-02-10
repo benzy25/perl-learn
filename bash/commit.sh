@@ -66,11 +66,26 @@ tput setaf 2;echo  wanna do some pushin?;tput sgr0
 read -r push 
 if [ "$push" = "yes" ]
 then 
-    pushing # you know this function 
-    until [ "$more" = "no" ]
-    do
-        more # you know this function
-    done
+    read -r -p "All of em? " all
+    if [ "$all" = "yes" ]
+        then
+            git branch
+            tput setaf 1;echo  What Branch?;tput sgr0 
+            read -r branch
+            git push origin "$branch"
+            sleep 1
+            git push staging "$branch"
+            sleep 1
+            git push production "$branch"
+        elif [ "$all" = "no" ]
+        then
+            pushing # you know this function 
+            until [ "$more" = "no" ]
+            do
+                more # you know this function
+            done
+        fi
+
 elif [ "$push" = "no" ]
 then
     echo "Okay" 
