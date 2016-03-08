@@ -69,8 +69,8 @@ then
     read -r -p "All of em? " all
     if [ "$all" = "yes" ]
         then
-            git branch
             tput setaf 1;echo  What Branch?;tput sgr0 
+            git branch
             read -r branch
             git push origin "$branch"
             sleep 1
