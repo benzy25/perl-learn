@@ -3,9 +3,7 @@
 NOW=$(date +"%m.%d.%Y")
 
 mkdir ~/Desktop/email-tmp/
-sleep 1
 cd ~/Desktop/email-tmp/
-sleep 1
 unzip ~/Desktop/OneDrive-*.zip
 sleep 1
 for f in ./*.xlsx

@@ -6,7 +6,6 @@ REPOS=(
 ~/files/robbenz 
 ~/files/scripts
 ~/files/bash_profile
-~/files/diamedical/diamedical
 )
 
 MOVE="Moving to next REPO... \n" 
