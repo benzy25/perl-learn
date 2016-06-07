@@ -24,7 +24,7 @@ mattress and/or cover to your specific dimensions!
 
 <h2>Specifications</h2>
 <div class="ems-approved-img">
-<img class="ems-img-size" src="/wp-content/themes/x-child-integrity-light/imgs/ems-approved.png" alt="" /></div>
+<img class="ems-img-size" src="/wp-content/themes/x-child-integrity-light/imgs/ems-approved.png" alt="" ></div>
 
 <span class="spotlight-price">$19.50</span>
 
