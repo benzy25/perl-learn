@@ -2,8 +2,8 @@
 
 users() {
 
-wp user list --fields=user_email | grep 'hospital' >> /Users/jeffreyambrose/Desktop/email-tmp/hospital.csv
-wp user list --fields=user_email | grep -v 'hospital' >> /Users/jeffreyambrose/Desktop/email-tmp/nursing.csv
+wp user list --fields=user_email | grep 'hospital' >> /Users/jeffreyambrose/Desktop/email-tmp/wp_hospital.csv
+wp user list --fields=user_email | grep -v 'hospital' >> /Users/jeffreyambrose/Desktop/email-tmp/wp_nursing.csv
 }
 
 mkdir ~/Desktop/email-tmp/
