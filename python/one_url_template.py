@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "http://yoursite.com"
+url = "http://www.traillink.com/traillist.aspx?zipcode=48009&distance=50&length=0|99999"
 r = requests.get(url)
 
 soup = BeautifulSoup(r.content, "lxml")

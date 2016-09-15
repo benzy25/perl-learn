@@ -6,9 +6,9 @@ with open('urls.txt') as inf:
 	for url in urls:
 		r = requests.get(url)
 		soup = BeautifulSoup(r.content, "lxml")
-		print soup.find_all("h1", {"class": "entry-title"})[0].text
+		print soup.find_all("h1", {"class": "trailName"})[0].text
                 try:
-                    print soup.find_all("img", {"class": "alignleft"})[0].get("src")
+                    print soup.find_all("table", {"class": "details"}).str.replace('\n', ' ')
                 except:
                     pass
                 try:
