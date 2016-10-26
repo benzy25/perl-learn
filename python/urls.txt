@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 http://www.traillink.com/trail/wadhams-to-avoca-trail.aspx
 http://www.traillink.com/trail/west-bloomfield-trail.aspx
 http://www.traillink.com/trail/border-to-border-trail.aspx
@@ -30,3 +31,6 @@ http://www.traillink.com/trail/clinton-river-park-trail.aspx
 http://www.traillink.com/trail/linear-park-pathway.aspx
 http://www.traillink.com/trail/riverbend-preserve-rail-trail.aspx
 http://www.traillink.com/trail/genesee-valley-trail.aspx
+=======
+http://www.traillink.com/traillist.aspx?state=MI&length=0%7C99999
+>>>>>>> 0a11aeef3b34397ddaa365f997337c190b87c578
