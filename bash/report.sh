@@ -6,10 +6,10 @@ REPOS=(
 )
 
 tput setaf 2;echo "Enter Start Date:  (ex: 1989-03-25)"; tput sgr0
-read START 
+read -r START 
 
 tput setaf 2;echo "Enter End Date:  (ex: 1989-03-25)"; tput sgr0
-read END
+read -r END
 
 for i in "${REPOS[@]}"
 do
