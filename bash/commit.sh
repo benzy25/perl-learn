@@ -66,7 +66,7 @@ tput setaf 2;echo  wanna do some pushin?;tput sgr0
 read -r push 
 if [ "$push" = "yes" ]
 then 
-    cat .htaccess
+    head -10 .htaccess
     read -r -p "did you fix .htaccess? " hta 
     if [ "$hta" = "yes" ]
     then 
