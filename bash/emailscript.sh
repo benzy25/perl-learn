@@ -40,6 +40,7 @@ for t in ./*.csv
 do
     mv "$t" "${t//.csv.csv/.csv}"
 done
+
 tput setaf 2;echo "are there multiple hospital databases?";tput sgr0
 read -r hospital
 if [ "$hospital" = "yes" ]
@@ -48,6 +49,26 @@ then
     pwd
     touch all_hospital.csv
     cat Hospi* >> all_hospital.csv
+fi
+
+tput setaf 2;echo "nursing school?";tput sgr0
+read -r NS 
+if [ "$NS" = "yes" ]
+then
+    cd ~/Desktop/new-csv/ || exit
+    pwd
+    touch all_ns.csv
+    cat Nursin* >> all_ns.csv
+fi
+
+tput setaf 2;echo "camp?";tput sgr0
+read -r CAMP 
+if [ "$CAMP" = "yes" ]
+then
+    cd ~/Desktop/new-csv/ || exit
+    pwd
+    touch all_camp.csv
+    cat Camp* >> all_camp.csv
 fi
 
 tput setaf 2;echo "type done when you are finished importing";tput sgr0
