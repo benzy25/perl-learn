@@ -71,6 +71,16 @@ then
     cat Camp* >> all_camp.csv
 fi
 
+tput setaf 2;echo "EMS?";tput sgr0
+read -r EMS
+if [ "$EMS" = "yes" ]
+then
+    cd ~/Desktop/new-csv/ || exit
+    pwd
+    touch all_ems.csv
+    cat EMS* >> all_ems.csv
+fi
+
 tput setaf 2;echo "type done when you are finished importing";tput sgr0
 read -r input
 if [ "$input" = "done" ]
