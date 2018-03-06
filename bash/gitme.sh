@@ -2,7 +2,7 @@
 
 REPOS=( 
 ~/files/sql 
-~/files/plugs 
+/Applications/MAMP/htdocs/plugs
 ~/files/scripts
 ~/files/bash_profile
 )
