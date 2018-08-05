@@ -35,4 +35,4 @@ echo "Author URI: $auri" >> wp-content/plugins/"$dir"/"$file"
 echo "License: GPL2" >> wp-content/plugins/"$dir"/"$file"
 echo "*/" >> wp-content/plugins/"$dir"/"$file"
 
-mvim wp-content/plugins/"$dir"/"$file"
+atom wp-content/plugins/"$dir"/"$file"
